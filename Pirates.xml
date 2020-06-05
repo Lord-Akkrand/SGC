@@ -1,0 +1,10 @@
+<Pirates>
+    <Fleet Name="Level 15">
+        <Ships Hull="Destroyer" Pattern="0023300123" Number="30" />
+        <Ships Hull="Cruiser" Pattern="222001331011223330" Number="20" />
+    </Fleet>
+    <Fleet Name="Level 10">
+        <Ships Hull="Destroyer" Pattern="0023300123" Number="10" />
+        <Ships Hull="Frigate" Pattern="0021203" Number="20" />
+    </Fleet>
+</Pirates>

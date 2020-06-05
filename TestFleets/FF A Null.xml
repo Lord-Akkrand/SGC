@@ -1,0 +1,1523 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>System.Collections.Hashtable</T>
+      <T>System.Object</T>
+    </TN>
+    <DCT>
+      <En>
+        <S N="Key">Shields</S>
+        <Db N="Value">1000</Db>
+      </En>
+      <En>
+        <S N="Key">NumberShips</S>
+        <I32 N="Value">30</I32>
+      </En>
+      <En>
+        <S N="Key">Ships</S>
+        <Obj N="Value" RefId="1">
+          <TN RefId="1">
+            <T>System.Object[]</T>
+            <T>System.Array</T>
+            <T>System.Object</T>
+          </TN>
+          <LST>
+            <Obj RefId="2">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Obj N="Value" RefId="3">
+                    <TNRef RefId="1" />
+                    <LST>
+                      <S>tL</S>
+                      <S>tL</S>
+                      <S>sL</S>
+                    </LST>
+                  </Obj>
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="4">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="5">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="6">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="7">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="8">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="9">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="10">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="11">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="12">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="13">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="14">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="15">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="16">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="17">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="18">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="19">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="20">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="21">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="22">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="23">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="24">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="25">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="26">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="27">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="28">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="29">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="30">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="31">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+            <Obj RefId="32">
+              <TNRef RefId="0" />
+              <DCT>
+                <En>
+                  <S N="Key">Leadership</S>
+                  <I32 N="Value">6</I32>
+                </En>
+                <En>
+                  <S N="Key">Shields</S>
+                  <Db N="Value">1000</Db>
+                </En>
+                <En>
+                  <S N="Key">Armour</S>
+                  <Db N="Value">2.5</Db>
+                </En>
+                <En>
+                  <S N="Key">HitPoints</S>
+                  <Db N="Value">5000</Db>
+                </En>
+                <En>
+                  <S N="Key">Weapons</S>
+                  <Ref N="Value" RefId="3" />
+                </En>
+                <En>
+                  <S N="Key">Accuracy</S>
+                  <I32 N="Value">5</I32>
+                </En>
+                <En>
+                  <S N="Key">Load</S>
+                  <I32 N="Value">360</I32>
+                </En>
+                <En>
+                  <S N="Key">Research</S>
+                  <B N="Value">true</B>
+                </En>
+                <En>
+                  <S N="Key">Name</S>
+                  <S N="Value">FF tL tL sL    </S>
+                </En>
+                <En>
+                  <S N="Key">Hull</S>
+                  <S N="Value">Frigate</S>
+                </En>
+                <En>
+                  <S N="Key">Evasion</S>
+                  <Db N="Value">80</Db>
+                </En>
+              </DCT>
+            </Obj>
+          </LST>
+        </Obj>
+      </En>
+      <En>
+        <S N="Key">EVD</S>
+        <Db N="Value">80</Db>
+      </En>
+      <En>
+        <S N="Key">Name</S>
+        <S N="Value">FF A Null</S>
+      </En>
+      <En>
+        <S N="Key">HP</S>
+        <Db N="Value">5000</Db>
+      </En>
+      <En>
+        <S N="Key">PROT</S>
+        <Db N="Value">2.5</Db>
+      </En>
+    </DCT>
+  </Obj>
+</Objs>

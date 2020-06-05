@@ -1,0 +1,28 @@
+<Research>
+    <Tech Affects="Corvette" Attribute="HitPoints" Bonus="0.3" />
+    <Tech Affects="Corvette" Attribute="Armour" Bonus="0.3" />
+    <Tech Affects="Corvette" Attribute="Evasion" Bonus="30" />
+    <Tech Affects="Corvette" Attribute="Shields" Bonus="0.3" />
+    <Tech Affects="Frigate" Attribute="HitPoints" Bonus="0.25" />
+    <Tech Affects="Frigate" Attribute="Armour" Bonus="0.25" />
+    <Tech Affects="Frigate" Attribute="Evasion" Bonus="25" />
+    <Tech Affects="Frigate" Attribute="Shields" Bonus="0.25" />
+    <Tech Affects="Destroyer" Attribute="HitPoints" Bonus="0.2" />
+    <Tech Affects="Destroyer" Attribute="Armour" Bonus="0.2" />
+    <Tech Affects="Destroyer" Attribute="Evasion" Bonus="20" />
+    <Tech Affects="Destroyer" Attribute="Shields" Bonus="0.2" />
+    <Tech Affects="Cruiser" Attribute="HitPoints" Bonus="0.05" />
+    <Tech Affects="Cruiser" Attribute="Armour" Bonus="0.05" />
+    <Tech Affects="Cruiser" Attribute="Evasion" Bonus="5" />
+    <Tech Affects="Cruiser" Attribute="Shields" Bonus="0.05" />
+    <Tech Affects="Fleet" Attribute="Damage" Bonus="0.3" />
+    <Tech Affects="Fleet" Attribute="Accuracy" Bonus="30" />
+    <Tech Affects="Kinetic" Attribute="Damage" Bonus="0.3" />
+    <Tech Affects="Kinetic" Attribute="Accuracy" Bonus="30" />
+    <Tech Affects="Laser" Attribute="Damage" Bonus="0.3" />
+    <Tech Affects="Laser" Attribute="Accuracy" Bonus="30" />
+    <Tech Affects="Missile" Attribute="Damage" Bonus="0.3" />
+    <Tech Affects="Missile" Attribute="Accuracy" Bonus="30" />
+    <Tech Affects="Drone" Attribute="Damage" Bonus="0.3" />
+    <Tech Affects="Drone" Attribute="Accuracy" Bonus="30" />
+</Research>

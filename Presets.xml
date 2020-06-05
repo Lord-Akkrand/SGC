@@ -1,0 +1,49 @@
+<Pirates>
+    <Fleet Name="DDC A Null">
+        <Ships Hull="Corvette" Pattern="044" Number="150" />
+    </Fleet>
+    <Fleet Name="DDC B EVD">
+        <Ships Hull="Corvette" Pattern="022" Number="150" />
+    </Fleet>
+    <Fleet Name="DDC C PROT">
+        <Ships Hull="Corvette" Pattern="000" Number="150" />
+    </Fleet>
+    <Fleet Name="DDC D Shield">
+        <Ships Hull="Corvette" Pattern="033" Number="150" />
+    </Fleet>
+    <Fleet Name="DDC E HP">
+        <Ships Hull="Corvette" Pattern="011" Number="150" />
+    </Fleet>
+    
+    <Fleet Name="FF A Null">
+        <Ships Hull="Frigate" Pattern="1114444" Number="30" />
+    </Fleet>
+    <Fleet Name="FF B EVD">
+        <Ships Hull="Frigate" Pattern="1112222" Number="30" />
+    </Fleet>
+    <Fleet Name="FF C PROT">
+        <Ships Hull="Frigate" Pattern="1110000" Number="30" />
+    </Fleet>
+    <Fleet Name="FF D Shield">
+        <Ships Hull="Frigate" Pattern="1113333" Number="30" />
+    </Fleet>
+    <Fleet Name="FF E HP">
+        <Ships Hull="Frigate" Pattern="1111111" Number="30" />
+    </Fleet>
+
+    <Fleet Name="DD A Null">
+        <Ships Hull="Destroyer" Pattern="0111144444" Number="10" />
+    </Fleet>
+    <Fleet Name="DD B EVD">
+        <Ships Hull="Destroyer" Pattern="0111122222" Number="10" />
+    </Fleet>
+    <Fleet Name="DD C PROT">
+        <Ships Hull="Destroyer" Pattern="0111100000" Number="10" />
+    </Fleet>
+    <Fleet Name="DD D Shield">
+        <Ships Hull="Destroyer" Pattern="0111133333" Number="10" />
+    </Fleet>
+    <Fleet Name="DD E HP">
+        <Ships Hull="Destroyer" Pattern="0111111111" Number="10" />
+    </Fleet>
+</Pirates>

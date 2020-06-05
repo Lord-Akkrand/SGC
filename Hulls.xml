@@ -1,0 +1,75 @@
+<Hulls>
+    <Hull Name="Corvette" Abbreviation="DDC">
+        <Leadership>3</Leadership>
+        <Load>100</Load>
+        <HitPoints>1200</HitPoints>
+        <Shields>0</Shields>
+        <Armour>0</Armour>
+        <Accuracy>0</Accuracy>
+        <Evasion>65</Evasion>
+        <WeaponSlots>
+            <Tiny>1</Tiny>
+        </WeaponSlots>
+        <PartSlots>
+            <Tiny>2</Tiny>
+        </PartSlots>
+        <StandardDesign Pattern="003" Name="WRI Horizon"/>
+    </Hull>
+    <Hull Name="Frigate" Abbreviation="FF">
+        <Leadership>6</Leadership>
+        <Load>400</Load>
+        <HitPoints>4000</HitPoints>
+        <Shields>800</Shields>
+        <Armour>2</Armour>
+        <Accuracy>5</Accuracy>
+        <Evasion>55</Evasion>
+        <WeaponSlots>
+            <Tiny>2</Tiny>
+            <Small>1</Small>
+        </WeaponSlots>
+        <PartSlots>
+            <Tiny>2</Tiny>
+            <Small>2</Small>
+        </PartSlots>
+        <StandardDesign Pattern="0021203" Name="SMG Newton" />
+    </Hull>
+    <Hull Name="Destroyer" Abbreviation="DD">
+        <Leadership>8</Leadership>
+        <Load>600</Load>
+        <HitPoints>24000</HitPoints>
+        <Shields>4800</Shields>
+        <Armour>4</Armour>
+        <Accuracy>5</Accuracy>
+        <Evasion>45</Evasion>
+        <WeaponSlots>
+            <Tiny>1</Tiny>
+            <Small>3</Small>
+            <Medium>1</Medium>
+        </WeaponSlots>
+        <PartSlots>
+            <Small>4</Small>
+            <Medium>1</Medium>
+        </PartSlots>
+        <StandardDesign Pattern="0023300123" Name="SMG Curie" />
+    </Hull>
+    <Hull Name="Cruiser" Abbreviation="CA">
+        <Leadership>16</Leadership>
+        <Load>1200</Load>
+        <HitPoints>46800</HitPoints>
+        <Shields>9360</Shields>
+        <Armour>12</Armour>
+        <Accuracy>12</Accuracy>
+        <Evasion>35</Evasion>
+        <WeaponSlots>
+            <Tiny>2</Tiny>
+            <Small>6</Small>
+            <Medium>1</Medium>
+        </WeaponSlots>
+        <PartSlots>
+            <Small>5</Small>
+            <Medium>3</Medium>
+            <Large>1</Large>
+        </PartSlots>
+        <StandardDesign Pattern="222001331" Name="SMG Braun" />
+    </Hull>
+</Hulls>

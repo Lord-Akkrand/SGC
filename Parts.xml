@@ -1,0 +1,85 @@
+<Parts>
+    <Part Name="Armour" Size="Tiny" Abbreviation="tA">
+        <Armour>4</Armour>
+        <Load>-10</Load>
+    </Part>
+    <Part Name="Armour" Size="Small" Abbreviation="sA">
+        <Armour>8</Armour>
+        <Load>-20</Load>
+    </Part> 
+    <Part Name="Armour" Size="Medium" Abbreviation="mA">
+        <Armour>14</Armour>
+        <Load>-40</Load>
+    </Part> 
+    <Part Name="Armour" Size="Large" Abbreviation="lA">
+        <Armour>20</Armour>
+        <Load>-80</Load>
+    </Part> 
+    <Part Name="Armour" Size="Heavy" Abbreviation="hA">
+        <Armour>30</Armour>
+        <Load>-160</Load>
+    </Part>
+
+    <Part Name="Plate" Size="Tiny" Abbreviation="tP">
+        <HitPoints>500</HitPoints>
+        <Load>-20</Load>
+    </Part>
+    <Part Name="Plate" Size="Small" Abbreviation="sP">
+        <HitPoints>1000</HitPoints>
+        <Load>-40</Load>
+    </Part> 
+    <Part Name="Plate" Size="Medium" Abbreviation="mP">
+        <HitPoints>2000</HitPoints>
+        <Load>-80</Load>
+    </Part> 
+    <Part Name="Plate" Size="Large" Abbreviation="lP">
+        <HitPoints>4000</HitPoints>
+        <Load>-160</Load>
+    </Part> 
+    <Part Name="Plate" Size="Heavy" Abbreviation="hP">
+        <HitPoints>8000</HitPoints>
+        <Load>-320</Load>
+    </Part> 
+
+    <Part Name="Scrambler" Size="Tiny" Abbreviation="tE">
+        <Evasion>4</Evasion>
+        <Load>-40</Load>
+    </Part>
+    <Part Name="Scrambler" Size="Small" Abbreviation="sE">
+        <Evasion>8</Evasion>
+        <Load>-80</Load>
+    </Part> 
+    <Part Name="Scrambler" Size="Medium" Abbreviation="mE">
+        <Evasion>12</Evasion>
+        <Load>-160</Load>
+    </Part> 
+    <Part Name="Scrambler" Size="Large" Abbreviation="lE">
+        <Evasion>18</Evasion>
+        <Load>-320</Load>
+    </Part> 
+    <Part Name="Scrambler" Size="Heavy" Abbreviation="hE">
+        <Evasion>30</Evasion>
+        <Load>-640</Load>
+    </Part>    
+
+    <Part Name="Shield" Size="Tiny" Abbreviation="tS">
+        <Shields>100</Shields>
+        <Load>-30</Load>
+    </Part>
+    <Part Name="Shield" Size="Small" Abbreviation="sS">
+        <Shields>200</Shields>
+        <Load>-60</Load>
+    </Part> 
+    <Part Name="Shield" Size="Medium" Abbreviation="mS">
+        <Shields>400</Shields>
+        <Load>-120</Load>
+    </Part> 
+    <Part Name="Shield" Size="Large" Abbreviation="lS">
+        <Shields>800</Shields>
+        <Load>-240</Load>
+    </Part> 
+    <Part Name="Shield" Size="Heavy" Abbreviation="hS">
+        <Shields>1600</Shields>
+        <Load>-480</Load>
+    </Part>
+</Parts>
