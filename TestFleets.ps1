@@ -29,6 +29,17 @@ function Chance-ToHit2($ar, $evd)
     return $hitPercentage
 }
 
+function Lerp($x, $min, $max)
+{
+    return (($max - $min) * $x) + $min
+}
+function Chance-ToHit3($ar, $evd)
+{
+    $ratio = Chance-ToHit2 $ar $evd
+    $hitPercentage = Lerp $ratio 0.6 0.8
+    return $hitPercentage
+}
+
 function Chance-ToHit($ar, $evd)
 {
     return Chance-ToHit2 $ar $evd
@@ -149,79 +160,102 @@ function Modify-Weapon($weapon)
     return $weapon
 }
 
-$lostOnShields = 0.5
+$lostOnShields = 0.0
+
+function Roll-To-Hit($accuracy, $evasion)
+{
+    $hitPercentage = Chance-ToHit $accuracy $evasion
+
+    [double]$randomRoll = Get-Random -Minimum 0.0 -Maximum 1.0 
+    return ($randomRoll -le $hitPercentage)
+}
+
+function Apply-Shields($weapon, $damageHit, $shipB)
+{
+    $damageDeflected = 0
+    $damageLost = 0
+    if ($shipB.Shields -gt 0)
+    {
+        $damageDeflected = [Math]::Min(((100.0 - $weapon.ShieldPiercing) / 100.0) * $damageHit, $shipB.Shields -as [double])
+        
+        $shipB.Shields -= $damageDeflected
+        $shipB["DamageDeflected"] += $damageDeflected
+        $damageLost = ($damageHit - $damageDeflected) * $lostOnShields;
+    }
+    
+    $damagePastShields = $damageHit - $damageDeflected - $damageLost
+    $shipB["Pierced"] += $damagePastShields
+    return $damagePastShields
+}
+
+function Apply-Armor($weapon, $damagePastShields, $shipB)
+{
+    $damageAbsorbed = 0
+    if ($shipB.Armour -gt 0)
+    {
+        $damageAbsorbed = ((100.0 - $weapon.ArmourPiercing) / 100.0) * $shipB.Armour
+    }
+
+    $damagePastArmour = $damagePastShields - $damageAbsorbed
+    $shipB["Penetrated"] += $damagePastArmour
+    return $damagePastArmour
+}
+
+function Apply-Hull($weapon, $damagePastArmour, $shipB)
+{
+    $damageReduced = 0
+    $found = $false
+    foreach ($hullModifier in $weapon.HullModifiers.ChildNodes)
+    {
+        if ($hullModifier.Name -eq $shipB.Hull)
+        {
+            $modifier = $hullModifier.'#text' -as [double]
+            $damageReduced = $damagePastArmour * (1.0 - $modifier)
+            $found = $true
+            break
+        }
+    }
+    if ($found -eq $false)
+    {
+        Write-Host "break"
+    }
+    $damageToHull = [Math]::Min($shipB.HitPoints, $damagePastArmour - $damageReduced)
+    $shipB.HitPoints -= $damageToHull
+    $shipB["Received"] += $damageToHull
+}
 
 function Open-Fire($shipA, $shipB, $round)
 {
-    foreach ($weaponName in $shipA["Weapons"])
+    foreach ($activeWeapon in $shipA["Weapons"])
     {
         #Write-Host("Weapon <{0}> Firing" -f $weaponName)
-        $weapon = Get-Weapon $weaponName
-        $roundModulo = $round % ($weapon.AttackSpeed -as [int])
+        #$weapon = Get-Weapon $weaponName
+        $roundModulo = $round % ($activeWeapon.AttackSpeed -as [int])
         if ($roundModulo -eq 0)
         {
-            $activeWeapon = $weapon.Clone()
-            if ($shipA.Research)
-            {
-                $activeWeapon = Modify-Weapon $activeWeapon
-            }
+            #$activeWeapon = $weapon.Clone()
+            #if ($shipA.Research)
+            #{
+            #    $activeWeapon = Modify-Weapon $activeWeapon
+            #}
             $baseDamage = ($activeWeapon.Damage -as [double]) * ($activeWeapon.DamageMultiplier -as [double])
+            $shipB["Damage"] += $baseDamage
 
             $accuracy = ($activeWeapon.Accuracy -as [double]) + ($shipA.Accuracy -as [double])
             $evasion = $shipB.Evasion
-            $hitPercentage = Chance-ToHit $accuracy $evasion
-
-            $shipB["Damage"] += $baseDamage
-
-            [double]$randomRoll = Get-Random -Minimum 0.0 -Maximum 1.0 
-            if ($randomRoll -le $hitPercentage)
+            if (Roll-To-Hit $accuracy $evasion)
             {
                 #Write-Host("Damage <{0}>" -f $accuracy)
                 #Write-Host("Accuracy <{0}> vs <{1}> = <{2}%>" -f $accuracy, $evasion, $activeAccuracy)
 
                 $damageHit = $baseDamage
+                $shipB["Hit"] += $damageHit
                 #Write-Host("Hit <{0}> Damage" -f $damageHit)
 
-                $damageDeflected = 0
-                $damageLost = 0
-                if ($shipB.Shields -gt 0)
-                {
-                    $damageDeflected = [Math]::Min(((100.0 - $weapon.ShieldPiercing) / 100.0) * $damageHit, $shipB.Shields -as [double])
-                    
-                    $shipB.Shields -= $damageDeflected
-                    $shipB["DamageDeflected"] += $damageDeflected
-                    $damageLost = ($damageHit - $damageDeflected) * $lostOnShields;
-                }
-                
-                $damagePastShields = $damageHit - $damageDeflected - $damageLost
-                
-                $damageAbsorbed = 0
-                if ($shipB.Armour -gt 0)
-                {
-                    $damageAbsorbed = ((100 - $weapon.ArmourPiercing) / 100.0) * $shipB.Armour
-                }
-
-                $damagePastArmour = $damagePastShields - $damageAbsorbed
-                
-                $damageReduced = 0
-                foreach ($hullModifier in $weapon.HullModifiers.ChildNodes)
-                {
-                    if ($hullModifier.Name -eq $shipB.Hull)
-                    {
-                        $modifier = $hullModifier.'#text' -as [double]
-                        $damageReduced = $damagePastArmour * (1.0 - $modifier)
-                    }
-                }
-                $damageToHull = [Math]::Min($shipB.HitPoints, $damagePastArmour - $damageReduced)
-                $shipB.HitPoints -= $damageToHull
-                
-                $shipB["Hit"] += $damageHit
-                $shipB["Pierced"] += $damagePastShields
-                $shipB["Penetrated"] += $damagePastArmour
-                $shipB["Received"] += $damageToHull
+                $damagePastShields = Apply-Shields $activeWeapon $damageHit $shipB
+                $damagePastArmour = Apply-Armor $activeWeapon $damagePastShields $shipB
+                Apply-Hull $activeWeapon $damagePastArmour $shipB
             }
-                
-            
         }
     }
     if ($shipB.HitPoints -le 0)
@@ -264,7 +298,7 @@ function Fleet-Fire($fleetA, $fleetB)
     }
 }
 
-function Initialise-Damage($fleet)
+function Initialise-Fleet($fleet)
 {
     foreach ($ship in $fleet["Ships"])
     {
@@ -276,6 +310,19 @@ function Initialise-Damage($fleet)
         $ship["DamageDeflected"] = 0
         $ship["Penetrated"] = 0
         $ship["Received"] = 0
+
+        $newShipWeapons = @()
+        foreach ($weaponName in $ship["Weapons"])
+        {
+            $weapon = Get-Weapon $weaponName
+            $activeWeapon = $weapon.Clone()
+            if ($ship.Research)
+            {
+                $activeWeapon = Modify-Weapon $activeWeapon
+            }
+            $newShipWeapons += $activeWeapon
+        }
+        $ship["Weapons"] = $newShipWeapons
     }
     $fleet["OriginalShips"] = $fleet["NumberShips"]
 }
@@ -326,8 +373,9 @@ function Collate-Damage($fleet)
 
 function Smash-Fleets($fleetA, $fleetB)
 {
-    Initialise-Damage $fleetA
-    Initialise-Damage $fleetB
+    Initialise-Fleet $fleetA
+    Initialise-Fleet $fleetB
+
     $round = 0
     while ($true)
     {
@@ -343,11 +391,11 @@ function Smash-Fleets($fleetA, $fleetB)
         {
             Collate-Damage $fleetA
             Collate-Damage $fleetB
-            Write-Host("{0} {1}({2}) vs {3} {4}({5}): Round {6}" -f $fleetA["Name"], -$fleetA["TotalLoss"], $fleetA["TotalLossPC"], $fleetB["Name"], -$fleetB["TotalLoss"], $fleetB["TotalLossPC"], $round)
+            #Write-Host("{0} {1}({2}) vs {3} {4}({5}): Round {6}" -f $fleetA["Name"], -$fleetA["TotalLoss"], $fleetA["TotalLossPC"], $fleetB["Name"], -$fleetB["TotalLoss"], $fleetB["TotalLossPC"], $round)
             $damageInfo = ("{0}, {1}, {2}, {3}, {4}, {5}" -f $fleetA["Name"], $fleetA["Damage"], $fleetA["Hit"], $fleetA["Pierced"], $fleetA["Penetrated"], $fleetA["Received"])
             #Write-Host $damageInfo
             Add-Content -Path $OutputFile -Value $damageInfo
-            break
+            return @($fleetA["TotalLossPC"], $fleetB["TotalLossPC"])
         }
     }
 }
@@ -397,15 +445,42 @@ function TestAll()
     }
 }
 
+Clear-Host
+
 function Test-Presets()
 {
+    $progressId = 0
     foreach($presetFleet in $PresetFleets)
     {
         foreach($private:pirateFleet in $PirateFleets)
         {
-            $fleetA = Deep-Copy $presetFleet
-            $fleetB = Deep-Copy $private:pirateFleet
-            Smash-Fleets $fleetA $fleetB
+            $progressId++
+
+            $barTitle = $presetFleet["Name"]
+            $update = "-"
+                
+            $percentages = @(0, 0)
+            $count = 2
+            $countAsDouble = $count -as [double]
+            $p0 = $percentages[0] / $countAsDouble
+            $p1 = $percentages[1] / $countAsDouble
+            for ($i = 0; $i -lt $count; $i++)
+            {
+                $fleetA = Deep-Copy $presetFleet
+                $fleetB = Deep-Copy $private:pirateFleet
+                $retVal = Smash-Fleets $fleetA $fleetB
+                $percentages[0] += $retVal[0]
+                $percentages[1] += $retVal[1]
+
+                $iAsDouble = ($i + 1) -as [double]
+                $p0 = $percentages[0] / $iAsDouble
+                $p1 = $percentages[1] / $iAsDouble
+                $percentComplete = ($iAsDouble / $countAsDouble) * 100
+                $update = ("{0} vs {1}" -f $p0, $p1)
+                Write-Progress -Activity $barTitle -Status $update -Id $progressId -PercentComplete $percentComplete
+            }
+            
+            Write-Host("{0}: {1} vs {2}" -f $presetFleet["Name"], $p0, $p1)
         }
     }
 }

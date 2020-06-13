@@ -128,11 +128,22 @@ function Create-Fleet()
     return $fleet
 }
 
+function Deep-Copy($obj)
+{
+    $ms = New-Object System.IO.MemoryStream
+    $bf = New-Object System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+    $bf.Serialize($ms, $obj)
+    $ms.Position = 0
+    $ret = $bf.Deserialize($ms)
+    $ms.Close()
+    return $ret
+}
+
 function Add-Number($fleet, $ship, $numberShips)
 {
     for ($i=0; $i -lt $numberShips; $i++)
     {
-        $shipClone = $ship.Clone()
+        $shipClone = Deep-Copy $ship
         $fleet["Ships"] += $shipClone
     }
     $fleet["NumberShips"] += $numberShips
