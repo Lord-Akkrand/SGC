@@ -143,17 +143,20 @@ function Modify-Weapon($weapon)
 {
     $weaponType = $weapon.Name
     $weapon.SetAttribute("DamageMultiplier", "1")
-    foreach ($tech in $MyResearchXML.Research.ChildNodes)
+    if ($ship.Research)
     {
-        if ($tech.Affects -eq "Fleet" -or $tech.Affects -eq $weaponType)
+        foreach ($tech in $MyResearchXML.Research.ChildNodes)
         {
-            if ($tech.Attribute -eq "Damage")
+            if ($tech.Affects -eq "Fleet" -or $tech.Affects -eq $weaponType)
             {
-                $weapon.DamageMultiplier = ($weapon.DamageMultiplier -as [double]) + ($tech.Bonus -as [double])
-            }
-            elseif ($tech.Attribute -eq "Accuracy")
-            {
-                $weapon.Accuracy = ($weapon.Accuracy -as [double]) + ($tech.Bonus -as [double])
+                if ($tech.Attribute -eq "Damage")
+                {
+                    $weapon.DamageMultiplier = ($weapon.DamageMultiplier -as [double]) + ($tech.Bonus -as [double])
+                }
+                elseif ($tech.Attribute -eq "Accuracy")
+                {
+                    $weapon.Accuracy = ($weapon.Accuracy -as [double]) + ($tech.Bonus -as [double])
+                }
             }
         }
     }
@@ -316,10 +319,7 @@ function Initialise-Fleet($fleet)
         {
             $weapon = Get-Weapon $weaponName
             $activeWeapon = $weapon.Clone()
-            if ($ship.Research)
-            {
-                $activeWeapon = Modify-Weapon $activeWeapon
-            }
+            $activeWeapon = Modify-Weapon $activeWeapon
             $newShipWeapons += $activeWeapon
         }
         $ship["Weapons"] = $newShipWeapons
@@ -452,6 +452,9 @@ function Test-Presets()
     $progressId = 0
     foreach($presetFleet in $PresetFleets)
     {
+        
+        Write-Host("Preset {0}" -f $presetFleet["Name"])
+
         foreach($private:pirateFleet in $PirateFleets)
         {
             $progressId++
@@ -460,7 +463,7 @@ function Test-Presets()
             $update = "-"
                 
             $percentages = @(0, 0)
-            $count = 2
+            $count = 10
             $countAsDouble = $count -as [double]
             $p0 = $percentages[0] / $countAsDouble
             $p1 = $percentages[1] / $countAsDouble
@@ -477,7 +480,7 @@ function Test-Presets()
                 $p1 = $percentages[1] / $iAsDouble
                 $percentComplete = ($iAsDouble / $countAsDouble) * 100
                 $update = ("{0} vs {1}" -f $p0, $p1)
-                Write-Progress -Activity $barTitle -Status $update -Id $progressId -PercentComplete $percentComplete
+                #Write-Progress -Activity $barTitle -Status $update -Id $progressId -PercentComplete $percentComplete
             }
             
             Write-Host("{0}: {1} vs {2}" -f $presetFleet["Name"], $p0, $p1)
@@ -485,4 +488,6 @@ function Test-Presets()
     }
 }
 
+Write-Host "Starting"
 Test-Presets
+Write-Host "Done"

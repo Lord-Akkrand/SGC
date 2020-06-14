@@ -420,7 +420,7 @@ function Create-Presets($xmlFile, $outputPath)
             $hullXML = Find-Hull $shipClass.Hull
             $hullInfo = Create-Hull $hullXML
             $thisShip = Create-Ship $hullInfo $shipClass.Pattern
-            Apply-Research $thisShip
+            #Apply-Research $thisShip
             Add-Number $fleet $thisShip $shipClass.Number
         }
 
